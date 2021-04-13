@@ -1,0 +1,17 @@
+﻿@model ProjectCore.ViewModels.BookListViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Livres phares</h1>
+    <div class="row">
+        @foreach (var book in Model.books)
+        {
+            <partial name="_CardBook" model="@book" />
+
+
+        }
+    </div>
+   
+</div>

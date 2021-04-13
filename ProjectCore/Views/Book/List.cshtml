@@ -1,0 +1,14 @@
+﻿@model BookListViewModel
+
+@{
+    ViewData["Title"] = "Liste livre Page";
+}
+
+<div class="row">
+    @foreach (var book in Model.books)
+    {
+        <partial name="_CardBook" model="@book" />
+
+
+    }
+</div>
