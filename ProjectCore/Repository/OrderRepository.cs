@@ -34,7 +34,7 @@ namespace ProjectCore.Repository
 
 
                 };
-                _appDbContext.OrderDetails.Add(OrderDetail);
+                order.OrderDetails.Add(OrderDetail);
             }
             _appDbContext.Orders.Add(order);
             _appDbContext.SaveChanges();

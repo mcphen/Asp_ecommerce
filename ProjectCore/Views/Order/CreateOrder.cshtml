@@ -1,14 +1,17 @@
 ﻿@model Order
 
 <form asp-controller="Order" asp-action="CreateOrder" method="post" class="col-12" role="form">
+    
     <div class="form-group row">
         <div class="col-md-6">
             <label asp-for="LastName"></label>
             <input asp-for="LastName" class="form-control" id="FirstName">
+            <span asp-validation-for="LastName" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="FirstName"></label>
             <input asp-for="FirstName" class="form-control" id="FirstName">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
 
     </div>
@@ -16,10 +19,12 @@
         <div class="col-md-6">
             <label asp-for="AdresseLine1"></label>
             <input asp-for="AdresseLine1" class="form-control" id="FirstName">
+            <span asp-validation-for="AdresseLine1" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="AdresseLine2"></label>
             <input asp-for="AdresseLine2" class="form-control" id="FirstName">
+            <span asp-validation-for="AdresseLine2" class="text-danger"></span>
         </div>
 
     </div>
@@ -27,10 +32,12 @@
         <div class="col-md-6">
             <label asp-for="ZipCode"></label>
             <input asp-for="ZipCode" class="form-control" id="FirstName">
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="City"></label>
             <input asp-for="City" class="form-control" id="FirstName">
+            <span asp-validation-for="City" class="text-danger"></span>
         </div>
 
     </div>
@@ -38,10 +45,12 @@
         <div class="col-md-6">
             <label asp-for="State"></label>
             <input asp-for="State" class="form-control" id="FirstName">
+            <span asp-validation-for="State" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="Country"></label>
             <input asp-for="Country" class="form-control" id="FirstName">
+            <span asp-validation-for="Country" class="text-danger"></span>
         </div>
 
     </div>
@@ -49,10 +58,12 @@
         <div class="col-md-6">
             <label asp-for="PhoneNumber"></label>
             <input asp-for="PhoneNumber" class="form-control" id="FirstName">
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
         </div>
         <div class="col-md-6">
             <label asp-for="Email"></label>
             <input asp-for="Email" class="form-control" id="FirstName">
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
 
     </div>
