@@ -1,0 +1,65 @@
+﻿@model Order
+
+<form asp-controller="Order" asp-action="CreateOrder" method="post" class="col-12" role="form">
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" id="FirstName">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" id="FirstName">
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label asp-for="AdresseLine1"></label>
+            <input asp-for="AdresseLine1" class="form-control" id="FirstName">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="AdresseLine2"></label>
+            <input asp-for="AdresseLine2" class="form-control" id="FirstName">
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label asp-for="ZipCode"></label>
+            <input asp-for="ZipCode" class="form-control" id="FirstName">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="City"></label>
+            <input asp-for="City" class="form-control" id="FirstName">
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label asp-for="State"></label>
+            <input asp-for="State" class="form-control" id="FirstName">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Country"></label>
+            <input asp-for="Country" class="form-control" id="FirstName">
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label asp-for="PhoneNumber"></label>
+            <input asp-for="PhoneNumber" class="form-control" id="FirstName">
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" id="FirstName">
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 ">
+            <input type="submit" class="btn btn-primary" value="Acheter" />
+        </div>
+    </div>
+</form>
